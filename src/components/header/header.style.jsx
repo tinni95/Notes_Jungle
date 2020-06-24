@@ -67,11 +67,11 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const OptionContainer = styled.div`
-  padding: 10px;
+  padding: 20px;
   padding-right: 40px;
   width: 50%;
   height: 100%;
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -79,7 +79,7 @@ export const OptionContainer = styled.div`
     width: 80%;
     padding: 5px;
     padding-top: 15px;
-    font-size: 8px;
+    font-size: 10px;
   }
 `;
 

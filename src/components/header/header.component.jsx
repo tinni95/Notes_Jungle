@@ -8,7 +8,7 @@ import {
   OptionLink,
   OptionDiv,
 } from "./header.style";
-import { ReactComponent as Logo } from "../../assets/diverse.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { auth } from "../../firebase/firebase.util.js";
 
 const Header = ({ currentUser }) => {

@@ -53,9 +53,8 @@ export const HeaderContainer = styled.div`
 export const LogoContainer = styled(Link)`
   height: 50px;
   width: 50px;
-  padding: 25px;
+  padding: 25px 0;
   margin-left: 20px;
-  ${JelloAnimation}
   &:hover {
     animation: jello 2s;
     transform-origin: center;
@@ -71,7 +70,7 @@ export const OptionContainer = styled.div`
   padding-right: 40px;
   width: 50%;
   height: 100%;
-  font-size: 15px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: flex-end;

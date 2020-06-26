@@ -5,8 +5,30 @@ import {
   HeaderContainer,
   HeaderTitle,
 } from "./homepage.style";
-import Autocomplete from "@material-ui/lab/Autocomplete";
-import TextField from "@material-ui/core/TextField";
+import { ReactSearchAutocomplete } from "react-search-autocomplete";
+
+const items = [
+  {
+    id: 0,
+    name: "Cobol",
+  },
+  {
+    id: 1,
+    name: "JavaScript",
+  },
+  {
+    id: 2,
+    name: "Basic",
+  },
+  {
+    id: 3,
+    name: "PHP",
+  },
+  {
+    id: 4,
+    name: "Java",
+  },
+];
 
 const Home = () => (
   <HeaderContainer>
@@ -16,22 +38,13 @@ const Home = () => (
         The internet source for freely-downloadable notes Powered from students
         in UK universities.
       </HeaderText>
-      <Autocomplete
-        freeSolo
-        id="free-solo-2-demo"
-        disableClearable
-        options={["a", "b"]}
-        onChange={(event, newValue) => {}}
-        renderInput={(params) => (
-          <TextField
-            {...params}
-            label="Cerca input"
-            margin="normal"
-            variant="outlined"
-            InputProps={{ ...params.InputProps, type: "search" }}
-          />
-        )}
-      />
+      <div style={{ marginTop: "20px" }}>
+        <ReactSearchAutocomplete
+          placeholder="find your university"
+          items={items}
+          autoFocus
+        />
+      </div>
     </TextWrapper>
   </HeaderContainer>
 );

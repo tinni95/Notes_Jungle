@@ -4,7 +4,7 @@ export const HeaderContainer = styled.div`
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://i.ibb.co/d5CMMPG/Mask-Min-X2.png");
   background-size: cover;
-  height: 500px;
+  height: 550px;
   text-align: center;
   background-position: left;
   display: flex;

@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 
 export const HeaderContainer = styled.div`
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("https://i.ibb.co/d5CMMPG/Mask-Min-X2.png");
   background-size: cover;
   height: 550px;
   text-align: center;
@@ -13,8 +11,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  width: 50%;
-  text-align: left;
+  text-align: center;
 
   @media screen and (max-width: 800px) {
     width: 100%;
@@ -29,6 +26,7 @@ const titleStyle = css`
   font-size: 60px;
   color: white;
 `;
+
 export const HeaderTitle = styled.div`
   ${titleStyle}
   font-size: 60px;

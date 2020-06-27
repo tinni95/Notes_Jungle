@@ -168,4 +168,123 @@ export const notes = [
       code: "Blawf1",
     },
   },
+  {
+    title: "Heriot-Watt University - Production Technology I",
+    year: "2018-2019",
+    university: {
+      name: "Heriot-Watt University",
+    },
+    module: {
+      title: "Accounting",
+      code: "Blawf1",
+    },
+  },
+  {
+    title: "3 Loans and Loan Schedules",
+    year: "2018-2019",
+    university: {
+      name: "Heriot-Watt University",
+    },
+    module: {
+      title: "Accounting",
+      code: "Blawf1",
+    },
+  },
+  {
+    title: "Competitive Stance",
+    year: "2018-2019",
+    university: {
+      name: "Heriot-Watt University",
+    },
+    module: {
+      title: "Accounting",
+      code: "Blawf1",
+    },
+  },
+  {
+    title: "Sample/practice exam 6 June, questions and answers",
+    year: "2018-2019",
+    university: {
+      name: "Heriot-Watt University",
+    },
+    module: {
+      title: "Accounting",
+      code: "Blawf1",
+    },
+  },
+  {
+    title: "Heriot-Watt University - Production Technology I",
+    year: "2018-2019",
+    university: {
+      name: "Heriot-Watt University",
+    },
+    module: {
+      title: "Accounting",
+      code: "Blawf1",
+    },
+  },
+  {
+    title: "3 Loans and Loan Schedules",
+    year: "2018-2019",
+    university: {
+      name: "Heriot-Watt University",
+    },
+    module: {
+      title: "Accounting",
+      code: "Blawf1",
+    },
+  },
+  {
+    title: "Competitive Stance",
+    year: "2018-2019",
+    university: {
+      name: "Heriot-Watt University",
+    },
+    module: {
+      title: "Accounting",
+      code: "Blawf1",
+    },
+  },
+  {
+    title: "Sample/practice exam 6 June, questions and answers",
+    year: "2018-2019",
+    university: {
+      name: "Heriot-Watt University",
+    },
+    module: {
+      title: "Accounting",
+      code: "Blawf1",
+    },
+  },
+];
+
+export const modules = [
+  {
+    code: "001",
+    title: "Petroleum Engineering",
+  },
+  {
+    code: "CT1",
+    title: "Financial Mathematics",
+  },
+  {
+    code: "CT1",
+    title: "Strategic Management",
+  },
+  {
+    code: "FN1",
+    title: "Foundation of Computer Science I",
+  },
+  {
+    code: "FN2",
+    title: "Foundation of Computer Science II",
+  },
+  {
+    code: "DM2",
+    title: "Discrete Mathematics",
+  },
+  {
+    code: "Blawf1",
+    title: "Accounting",
+  },
 ];

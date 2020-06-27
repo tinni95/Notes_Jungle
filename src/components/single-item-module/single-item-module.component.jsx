@@ -3,15 +3,20 @@ import {
   ItemContainer,
   IconContainer,
   ItemTitle,
+  TitleCodeContainer,
+  ItemCode,
 } from "./single-item-module.styles";
-import { ReactComponent as DocIcon } from "../../assets/logo.svg";
+import { ReactComponent as ModuleIcon } from "../../assets/directory.svg";
 
-const ItemModule = ({ title }) => (
+const ItemModule = ({ title, code }) => (
   <ItemContainer>
     <IconContainer>
-      <DocIcon />
+      <ModuleIcon />
     </IconContainer>
-    <ItemTitle>{title}</ItemTitle>
+    <TitleCodeContainer>
+      <ItemTitle>{title}</ItemTitle>
+      <ItemCode>{code}</ItemCode>
+    </TitleCodeContainer>
   </ItemContainer>
 );
 

@@ -27,6 +27,12 @@ const titleStyle = css`
   color: white;
 `;
 
+export const ItemListContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 40px 80px;
+`;
+
 export const HeaderTitle = styled.div`
   ${titleStyle}
   font-size: 60px;

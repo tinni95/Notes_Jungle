@@ -7,12 +7,10 @@ import {
 } from "./homepage.style";
 import { ReactSearchAutocomplete } from "react-search-autocomplete";
 import { items } from "../../back-end-mocks/university";
-const handleOnSelect = (item) => {
-  // the item selected
-  console.log(item);
-};
 
-const Home = () => (
+const handleOnSelect = (item) => {};
+
+const Home = ({ history }) => (
   <HeaderContainer>
     <TextWrapper>
       <HeaderTitle>Notes Jungle</HeaderTitle>
@@ -25,7 +23,7 @@ const Home = () => (
           placeholder="find your university"
           items={items}
           autoFocus
-          onSelect={handleOnSelect}
+          onSelect={(item) => history.push(`/university/${item.id}`)}
         />
       </div>
     </TextWrapper>

@@ -16,7 +16,7 @@ const University = ({ match }) => {
         <HeaderTitle>{university[0].name}</HeaderTitle>
         <div style={{ marginTop: "40px" }}>
           <ReactSearchAutocomplete
-            placeholder="find your note"
+            placeholder="Search a course in this university and find notes about it"
             items={items}
             autoFocus
             onSelect={() => {}}

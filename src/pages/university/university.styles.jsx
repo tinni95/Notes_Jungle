@@ -12,7 +12,7 @@ export const HeaderContainer = styled.div`
 
 export const TextWrapper = styled.div`
   text-align: center;
-
+  min-width: 500px;
   @media screen and (max-width: 800px) {
     width: 100%;
     margin: 50px;

@@ -134,6 +134,7 @@ export const notes = [
       title: "Accounting",
       code: "Blawf1",
     },
+    preview: "adsfd dfas",
   },
   {
     title: "3 Loans and Loan Schedules",

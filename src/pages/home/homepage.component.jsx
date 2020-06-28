@@ -8,7 +8,13 @@ import {
 import { ReactSearchAutocomplete } from "react-search-autocomplete";
 import { items } from "../../back-end-mocks/university";
 
-const handleOnSelect = (item) => {};
+/**
+ * Universities {
+ * title
+ * id
+ * }
+ *
+ */
 
 const Home = ({ history }) => (
   <HeaderContainer>

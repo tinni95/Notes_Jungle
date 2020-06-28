@@ -11,6 +11,20 @@ import { items, notes, modules } from "../../back-end-mocks/university";
 import ItemList from "../../components/item-list/item-list";
 import { listItemsType } from "../../constants/list-item-types";
 
+/**
+ * University(id) {
+ * title
+ * modules{
+ * code
+ * title
+ * }
+ * notes{
+ * title
+ * }
+ * }
+ *
+ */
+
 const University = ({ match }) => {
   const university = findUniversityById(match.params.id);
   return (
@@ -25,7 +39,11 @@ const University = ({ match }) => {
           <div style={{ marginTop: "40px" }}>
             <ReactSearchAutocomplete
               placeholder="Search a course in this university and find notes about it"
-              items={items}
+              items={modules.map((module) => {
+                return {
+                  name: module.title,
+                };
+              })}
               autoFocus
               onSelect={() => {}}
             />
@@ -35,12 +53,12 @@ const University = ({ match }) => {
       <ItemListContainer>
         <ItemList
           title={"MOST POPULAR MODULES"}
-          items={notes}
+          items={modules}
           type={listItemsType.DOCUMENT}
         />
         <ItemList
           title={"MOST POPULAR DOCUMENTS"}
-          items={modules}
+          items={notes}
           type={listItemsType.MODULE}
         />
       </ItemListContainer>

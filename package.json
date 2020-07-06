@@ -12,9 +12,11 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-pdf": "^4.1.0",
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
     "react-search-autocomplete": "^1.0.6",
+    "reactjs-pdf-reader": "^1.0.12",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6"
   },

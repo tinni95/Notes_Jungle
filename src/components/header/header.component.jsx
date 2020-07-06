@@ -13,7 +13,6 @@ import { auth } from "../../firebase/firebase.util.js";
 import { connect } from "react-redux";
 
 const Header = ({ currentUser }) => {
-  console.log(currentUser);
   return (
     <HeaderContainer>
       <LogoContainer to="/">

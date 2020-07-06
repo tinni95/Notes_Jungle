@@ -25,17 +25,18 @@ import { listItemsType } from "../../constants/list-item-types";
  *
  */
 
-const University = ({ match }) => {
+const University = ({ match, history }) => {
   const university = findUniversityById(match.params.id);
+  console.log(university);
   return (
     <>
       <HeaderContainer
         style={{
-          backgroundImage: `url(${university[0].imgUrl})`,
+          backgroundImage: `url(${university.imgUrl})`,
         }}
       >
         <TextWrapper>
-          <HeaderTitle>{university[0].name}</HeaderTitle>
+          <HeaderTitle>{university.name}</HeaderTitle>
           <div style={{ marginTop: "40px" }}>
             <ReactSearchAutocomplete
               placeholder="Search a course in this university and find notes about it"
@@ -45,7 +46,7 @@ const University = ({ match }) => {
                 };
               })}
               autoFocus
-              onSelect={() => {}}
+              onSelect={(module) => history.push(`/module/${module.id}`)}
             />
           </div>
         </TextWrapper>
@@ -57,6 +58,7 @@ const University = ({ match }) => {
           type={listItemsType.DOCUMENT}
         />
         <ItemList
+          onPress={() => console.log("click")}
           title={"MOST POPULAR DOCUMENTS"}
           items={notes}
           type={listItemsType.MODULE}

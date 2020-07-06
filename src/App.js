@@ -9,6 +9,7 @@ import { createUserProfileDocument, auth } from "./firebase/firebase.util";
 import Profile from "./pages/profile/profile.component";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
+import NotePage from "./pages/note/note.component";
 
 class App extends React.Component {
   constructor() {
@@ -47,6 +48,8 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage}></Route>
           <Route exact path="/university/:id" component={University}></Route>
+          <Route exact path="/module/:id" component={NotePage}></Route>
+          <Route exact path="/note/:id" component={NotePage}></Route>
           <Route
             exact
             path="/sign"

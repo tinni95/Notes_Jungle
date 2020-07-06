@@ -8,8 +8,9 @@ import {
 import { listItemsType } from "../../constants/list-item-types";
 import ItemModule from "../single-item-module/single-item-module.component";
 import ItemDocument from "../single-item-document/single-item-document.component";
+import { withRouter } from "react-router-dom";
 
-const ItemList = ({ title, items, type }) => {
+const ItemList = ({ title, items, type, history }) => {
   switch (type) {
     case listItemsType.MODULE:
       return (
@@ -17,12 +18,12 @@ const ItemList = ({ title, items, type }) => {
           <ItemTitle>{title}</ItemTitle>
           <LinearGradient style={{ marginBottom: "10px" }} />
           <ItemListContainer>
-            {items.map(({ title, code }) => {
+            {items.map(({ title, code, id }) => {
               return (
-                <>
+                <div onClick={() => history.push(`/note/${id}`)}>
                   <ItemModule key={code} title={title} code={code} />
                   <LinearGradient />
-                </>
+                </div>
               );
             })}
           </ItemListContainer>
@@ -49,4 +50,4 @@ const ItemList = ({ title, items, type }) => {
   }
 };
 
-export default ItemList;
+export default withRouter(ItemList);

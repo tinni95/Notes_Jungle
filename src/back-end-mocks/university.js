@@ -125,6 +125,7 @@ export const items = [
 
 export const notes = [
   {
+    id: 1,
     title: "Heriot-Watt University - Production Technology I",
     year: "2018-2019",
     university: {
@@ -137,6 +138,7 @@ export const notes = [
     preview: "adsfd dfas",
   },
   {
+    id: 2,
     title: "3 Loans and Loan Schedules",
     year: "2018-2019",
     university: {
@@ -148,6 +150,7 @@ export const notes = [
     },
   },
   {
+    id: 3,
     title: "Competitive Stance",
     year: "2018-2019",
     university: {
@@ -159,6 +162,7 @@ export const notes = [
     },
   },
   {
+    id: 4,
     title: "Sample/practice exam 6 June, questions and answers",
     year: "2018-2019",
     university: {
@@ -170,6 +174,7 @@ export const notes = [
     },
   },
   {
+    id: 5,
     title: "Heriot-Watt University - Production Technology I",
     year: "2018-2019",
     university: {
@@ -181,6 +186,7 @@ export const notes = [
     },
   },
   {
+    id: 6,
     title: "3 Loans and Loan Schedules",
     year: "2018-2019",
     university: {
@@ -192,6 +198,7 @@ export const notes = [
     },
   },
   {
+    id: 7,
     title: "Competitive Stance",
     year: "2018-2019",
     university: {
@@ -203,6 +210,7 @@ export const notes = [
     },
   },
   {
+    id: 8,
     title: "Sample/practice exam 6 June, questions and answers",
     year: "2018-2019",
     university: {
@@ -214,6 +222,7 @@ export const notes = [
     },
   },
   {
+    id: 9,
     title: "Heriot-Watt University - Production Technology I",
     year: "2018-2019",
     university: {
@@ -225,6 +234,7 @@ export const notes = [
     },
   },
   {
+    id: 10,
     title: "3 Loans and Loan Schedules",
     year: "2018-2019",
     university: {
@@ -236,6 +246,7 @@ export const notes = [
     },
   },
   {
+    id: 11,
     title: "Competitive Stance",
     year: "2018-2019",
     university: {
@@ -247,6 +258,7 @@ export const notes = [
     },
   },
   {
+    id: 12,
     title: "Sample/practice exam 6 June, questions and answers",
     year: "2018-2019",
     university: {
@@ -261,31 +273,45 @@ export const notes = [
 
 export const modules = [
   {
+    id: 1,
     code: "001",
     title: "Petroleum Engineering",
+    notes,
   },
   {
+    id: 2,
     code: "CT1",
     title: "Financial Mathematics",
+    notes,
   },
   {
+    id: 3,
     code: "CT1",
     title: "Strategic Management",
+    notes,
   },
   {
+    id: 4,
     code: "FN1",
     title: "Foundation of Computer Science I",
+    notes,
   },
   {
+    id: 5,
     code: "FN2",
     title: "Foundation of Computer Science II",
+    notes,
   },
   {
+    id: 6,
     code: "DM2",
     title: "Discrete Mathematics",
+    notes,
   },
   {
+    id: 7,
     code: "Blawf1",
     title: "Accounting",
+    notes,
   },
 ];
